@@ -15,7 +15,7 @@ export class DataManipulator {
   static generateRow(serverResponds: ServerRespond[]) : Row {
     const priceABC = (serverResponds[0].top_ask.price + serverResponds[0].top_bid.price)/2;
     const priceDEF = (serverResponds[1].top_ask.price + serverResponds[1].top_bid.price)/2;
-    const ratio = price_abc/price_def;
+    const ratio = priceABC/priceDEF;
     const upperBound = 1.05;
     const lowerBound = 0.95;
     return {
