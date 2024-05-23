@@ -21,7 +21,7 @@ export class DataManipulator {
     return {
       price_abc: priceABC,
       price_def: priceDEF,
-      ratio: ratio,
+      ratio,
       timestamp: serverResponds[0].timestamp > serverResponds[1].timestamp ?
         serverResponds[0].timestamp : serverResponds[1].timestamp,
       upper_bound: upperBound,
